@@ -1,0 +1,10 @@
+version: '3.2'
+
+networks:
+  test-network: {}
+
+services:
+  curl:
+    image: appropriate/curl
+    networks:
+      test-network:

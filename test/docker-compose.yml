@@ -1,0 +1,23 @@
+version: '3.2'
+
+networks:
+  test-network: {}
+
+services:
+  docker-instant-https-proxy:
+    build: ..
+    volumes:
+      - "./ssl:/etc/nginx/certs/"
+    networks:
+      test-network:
+        aliases:
+        - mydomain.example.org
+
+  proxied-service:
+    image: php:7.2.10-apache-stretch
+    volumes:
+    - "./site:/var/www/html/test"
+    networks:
+      test-network:
+        aliases:
+        - web.mydomain.example.org
