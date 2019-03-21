@@ -155,3 +155,5 @@ Tests uses a self signed certificate so it is tested using --insecure.
 `
 
 Requires only docker installed.
+
+Thank you for your interest!
