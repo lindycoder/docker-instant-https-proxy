@@ -10,7 +10,7 @@ address prefixed by `web.`
 # But why?
 
 Sometimes you want to test including the SSL stack.  Browsers will show you warnings when accessing insecure url and
-that can caus overlooking some bugs related to https in your applications.
+that can cause overlooking some bugs related to https in your applications.
 
 # WARNING
 
@@ -25,7 +25,7 @@ You need a valid wildcard certificate for the domain you will use, trusted by of
 
 ## Setup your certificates
 
-Place your certificates in folder, calle them
+Place your certificates in a folder, and call them
 ```
 ssl.crt
 ssl.key
@@ -43,7 +43,7 @@ in docker-compose use
 
 #### -> Using an image and internal registry
 
-**DO NO PUBLISH AN IMAGE TO DOCKERHUB CONTAINING YOUR OWN CERTIFICATES**
+**DO NOT PUBLISH AN IMAGE TO DOCKERHUB CONTAINING YOUR OWN CERTIFICATES**
 
 ```
 FROM lindycoder/docker-instant-https-proxy:latest
