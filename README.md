@@ -115,6 +115,8 @@ curl -x socks5h://localhost:1080 https://my-app.example.org
 
 ##### With python's `requests`
 
+*Requires `pip install "requests[socks]"` to work*
+
 ```
 import os
 import requests
@@ -142,8 +144,6 @@ Update your `/etc/hosts` and add
 ```
 
 Then access `https://my-app.example.org` by all means you usually do :)
-
-# Limitations
 
 
 # Contributing / testing
